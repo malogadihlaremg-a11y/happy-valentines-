@@ -38,11 +38,13 @@ body {
 .container {
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    padding:40px;
+    padding:30px;
     border-radius:20px;
     text-align:center;
-    width:90%;
-    max-width:400px;
+    width:80%;
+    max-width:600px;
+    min-width:300px;
+    box-sizing: border-box;
 }
 
 input {
@@ -101,6 +103,11 @@ button {
     0% {transform: translateX(-100px) translateY(-100px);}
     100% {transform: translateX(100vw) translateY(100vh);}
 }
+
+/* Responsive Text */
+h1 {font-size:2em;}
+h2,h3 {font-size:1.2em;}
+p {font-size:1em; line-height:1.5em;}
 </style>
 </head>
 
@@ -168,7 +175,7 @@ function unlock(){
                     <source src="birds.mp3" type="audio/mpeg">
                 </audio>
 
-                <video width="80%" controls autoplay style="margin-top:20px; border-radius:15px;">
+                <video style="width:100%; max-width:500px; margin-top:20px; border-radius:15px;" controls autoplay>
                     <source src="stellar-message.mp4" type="video/mp4">
                 </video>
 
